@@ -33,7 +33,7 @@ public class Hunter : MonoBehaviour
         randomBanditNumber = Random.Range(0, 3);
         Vector2 position = Camera.main.ScreenToViewportPoint(new Vector2(Random.Range(canvas.rect.xMin, canvas.rect.xMax) * 20, Random.Range(canvas.rect.yMin, canvas.rect.yMax) * 15)); // -18, 18), Random.Range(-7, 9));
         banditClone = Instantiate(bandits[randomBanditNumber], position, Quaternion.identity);
-        
+
         whipSparkle.GetComponent<ParticleSystem>().enableEmission = false;
         nailSparkle.GetComponent<ParticleSystem>().enableEmission = false;
     }
@@ -59,14 +59,14 @@ public class Hunter : MonoBehaviour
     {
         if (collision.CompareTag("Bandit"))
         {
-            if (hasBounty) 
+            if (hasBounty)
             {
                 return;
             }
             hasBounty = true;
             StartCoroutine(FadeText(0.5f, PickedUp1));
             Destroy(collision.gameObject, banditDisappearTime);
-            
+
         }
         if (collision.CompareTag("Jail") && hasBounty)
         {

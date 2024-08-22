@@ -36,7 +36,7 @@ public class Joystick : MonoBehaviour
         else
         {
             touchStart = false;
-            player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         }
     }
     private void FixedUpdate()
@@ -55,11 +55,11 @@ public class Joystick : MonoBehaviour
         player.Translate(direction * hunter.speed * Time.deltaTime);
         if(direction.x < 0f)
         {
-            player.GetComponent<Rigidbody2D>().velocity = Vector2.left;
+            player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.left;
         }
         else if(direction.x > 0f)
         {
-            player.GetComponent<Rigidbody2D>().velocity = Vector2.right;
+            player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.right;
         }
     }
 }

@@ -1,0 +1,5 @@
+# ninja log v5
+0	247	7696020669009987	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	84a4630f2a6a6880
+249	337	7696020669897193	C:/Users/dogu/Documents/GitHub/Bounty-Hunter/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/q2l2j2y2/obj/arm64-v8a/libswappywrapper.so	80cd4a518df67679
+2	116	7696028208036060	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	84a4630f2a6a6880
+116	194	7696028208838418	C:/Users/dogu/Documents/GitHub/Bounty-Hunter/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/q2l2j2y2/obj/arm64-v8a/libswappywrapper.so	80cd4a518df67679

@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Bounty-Hunter.sln"
+    "dotnet.defaultSolution": "Bounty-Hunter.slnx"
 }
